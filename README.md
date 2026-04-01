@@ -17,3 +17,4 @@ El sitio consta de 5 secciones principales:
 
 ---
 *Desarrollado con fines académicos - 2026*
+ 
