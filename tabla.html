@@ -4,54 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla Comparativa - Mitos de Venezuela</title>
+    <style>
+        body {
+            background-color: #131313;
+            color: #f0f0f0;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 950px;
+            margin: auto;
+            background: rgba(0,0,0,0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px #e74c3c33;
+            border: 1px solid #333;
+        }
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p {
+            text-align: center;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #1a1a1a;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #e74c3c;
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        tr:nth-child(even) {
+            background-color: #222;
+        }
+        .danger-high { color: #ff4d4d; font-weight: bold; }
+        .danger-extreme { color: #ff0000; font-weight: bold; text-shadow: 0 0 5px #ff000066; }
+        .danger-medium { color: #ffa500; }
+        .danger-low { color: #00ff00; }
+
+        .footer-link {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+        }
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Resumen de Apariciones y Peligro</h1>
-    <p>Comparativa técnica de las leyendas venezolanas más conocidas.</p>
+    <div class="container">
+        <h1>Resumen de Apariciones y Peligro</h1>
+        <p>Comparativa técnica de las leyendas venezolanas más conocidas.</p>
 
-    <table border="1" cellpadding="10" cellspacing="0" style="width: 100%; text-align: left;">
-        <thead>
-            <tr style="background-color: #333; color: white;">
-                <th>Nombre del Espanto</th>
-                <th>Región Habitual</th>
-                <th>Señal de Presencia</th>
-                <th>Nivel de Peligro</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>La Sayona</strong></td>
-                <td>Llanos y Centro</td>
-                <td>Grito desgarrador / Aparece como mujer bella</td>
-                <td>Alto (Cazadora de infieles)</td>
-            </tr>
-            <tr>
-                <td><strong>El Silbón</strong></td>
-                <td>Llanos Venezolanos</td>
-                <td>Silbido melódico (Cerca = Lejos / Lejos = Cerca)</td>
-                <td>Extremo (Saco de huesos)</td>
-            </tr>
-            <tr>
-                <td><strong>Loca Luz Caraballo</strong></td>
-                <td>Páramos Andinos</td>
-                <td>Señala con los dedos a lo lejos</td>
-                <td>Bajo (Ánima en pena)</td>
-            </tr>
-            <tr>
-                <td><strong>El Dr. Knoche</strong></td>
-                <td>Galipán (Waraira Repano)</td>
-                <td>Frío intenso / Olor a químicos</td>
-                <td>Medio (Misterio médico)</td>
-            </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre del Espanto</th>
+                    <th>Región Habitual</th>
+                    <th>Señal de Presencia</th>
+                    <th>Nivel de Peligro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>La Sayona</strong></td>
+                    <td>Llanos y Centro</td>
+                    <td>Grito desgarrador / Aparece como mujer bella</td>
+                    <td class="danger-high">Alto (Cazadora de infieles)</td>
+                </tr>
+                <tr>
+                    <td><strong>El Silbón</strong></td>
+                    <td>Llanos Venezolanos</td>
+                    <td>Silbido melódico (Cerca = Lejos)</td>
+                    <td class="danger-extreme">Extremo (Saco de huesos)</td>
+                </tr>
+                <tr>
+                    <td><strong>Loca Luz Caraballo</strong></td>
+                    <td>Páramos Andinos</td>
+                    <td>Señala con los dedos a lo lejos</td>
+                    <td class="danger-low">Bajo (Ánima en pena)</td>
+                </tr>
+                <tr>
+                    <td><strong>El Dr. Knoche</strong></td>
+                    <td>Galipán (Waraira Repano)</td>
+                    <td>Frío intenso / Olor a químicos</td>
+                    <td class="danger-medium">Medio (Misterio médico)</td>
+                </tr>
+            </tbody>
+        </table>
 
-    <br>
-    <hr>
-    <p><a href="index.html">⬅ Volver al Menú Principal</a></p>
-    
-    <footer>
-        <p><small>Proyecto realizado por: Luis, Leiker y Josué.</small></p>
-    </footer>
+        <div class="footer-link">
+            <a href="index.html">⬅ VOLVER AL MENÚ PRINCIPAL</a>
+        </div>
+        
+        <footer>
+            <p>Proyecto realizado por: Luis, Leiker y Josué. | UPTPC 2026</p>
+        </footer>
+    </div>
 </body>
 </html>
