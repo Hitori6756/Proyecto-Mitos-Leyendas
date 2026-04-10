@@ -17,43 +17,59 @@
             max-width: 950px;
             margin: auto;
             background: rgba(0,0,0,0.85);
-            padding: 40px;
+            padding: 20px; /* Reducido un poco para móviles */
             border-radius: 15px;
             box-shadow: 0 0 25px #e74c3c33;
             border: 1px solid #333;
+        }
+        @media (min-width: 600px) {
+            .container { padding: 40px; }
         }
         h1 {
             text-align: center;
             color: #e74c3c;
             text-transform: uppercase;
             letter-spacing: 2px;
+            font-size: 1.5rem;
         }
-        p {
+        .subtitle {
             text-align: center;
             color: #aaa;
             margin-bottom: 30px;
+            font-size: 0.9rem;
         }
+        
+        /* CONTENEDOR PARA EL SCROLL MÓVIL */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto; /* Permite deslizar horizontalmente */
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 20px;
+            border: 1px solid #444;
+            border-radius: 8px;
+        }
+        
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
             background-color: #1a1a1a;
+            min-width: 600px; /* Mantiene la tabla legible en pantallas pequeñas */
         }
         th, td {
             border: 1px solid #444;
-            padding: 15px;
+            padding: 12px;
             text-align: left;
+            font-size: 0.9rem;
         }
         th {
             background-color: #e74c3c;
             color: white;
             text-transform: uppercase;
-            font-size: 0.9rem;
         }
         tr:nth-child(even) {
             background-color: #222;
         }
-        /* Clases de colores para niveles de peligro */
+        
         .danger-high { color: #ff4d4d; font-weight: bold; }
         .danger-extreme { color: #ff0000; font-weight: bold; text-shadow: 0 0 5px #ff000066; }
         .danger-low { color: #00ff00; }
@@ -79,46 +95,48 @@
 </head>
 <body>
     <div class="container">
-        <h1>Resumen de Apariciones y Peligro</h1>
-        <p>Comparativa técnica de las leyendas investigadas por el Grupo 2.</p>
+        <h1>Resumen de Apariciones</h1>
+        <p class="subtitle">Comparativa técnica de las leyendas investigadas por el Grupo 2.</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Nombre del Espanto</th>
-                    <th>Región Habitual</th>
-                    <th>Señal de Presencia</th>
-                    <th>Nivel de Peligro</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>La Sayona</strong></td>
-                    <td>Llanos y Centro</td>
-                    <td>Grito desgarrador / Aparece como mujer bella</td>
-                    <td class="danger-high">Alto (Cazadora de infieles)</td>
-                </tr>
-                <tr>
-                    <td><strong>El Silbón</strong></td>
-                    <td>Llanos Venezolanos</td>
-                    <td>Silbido melódico (Cerca = Lejos)</td>
-                    <td class="danger-extreme">Extremo (Saco de huesos)</td>
-                </tr>
-                <tr>
-                    <td><strong>Loca Luz Caraballo</strong></td>
-                    <td>Páramos Andinos</td>
-                    <td>Señala con los dedos a lo lejos</td>
-                    <td class="danger-low">Bajo (Ánima en pena)</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Región</th>
+                        <th>Señal de Presencia</th>
+                        <th>Peligro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>La Sayona</strong></td>
+                        <td>Llanos y Centro</td>
+                        <td>Grito desgarrador / Mujer bella</td>
+                        <td class="danger-high">Alto (Cazadora)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>El Silbón</strong></td>
+                        <td>Llanos Venezolanos</td>
+                        <td>Silbido (Cerca = Lejos)</td>
+                        <td class="danger-extreme">Extremo (Huesos)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Loca Luz Caraballo</strong></td>
+                        <td>Páramos Andinos</td>
+                        <td>Señala con los dedos a lo lejos</td>
+                        <td class="danger-low">Bajo (Ánima)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="footer-link">
             <a href="index.html">⬅ VOLVER AL MENÚ PRINCIPAL</a>
         </div>
         
         <footer>
-            <p>Proyecto realizado por: Luis Torrelles, Leiker Muñoz y Josué Reyes.</p>
+            <p>Luis Torrelles, Leiker Muñoz y Josué Reyes.</p>
             <p>UPTPC - Puerto Cabello, 2026</p>
         </footer>
     </div>
