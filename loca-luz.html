@@ -17,10 +17,13 @@
             max-width: 900px;
             margin: auto;
             background: rgba(0,0,0,0.85);
-            padding: 40px;
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 25px #e74c3c33;
             border: 1px solid #333;
+        }
+        @media (min-width: 600px) {
+            .container { padding: 40px; }
         }
         h1, h2, h3 {
             text-align: center;
@@ -57,13 +60,22 @@
         li {
             margin-bottom: 10px;
         }
-        /* Estilo para la tabla de Leiker */
+
+        /* AJUSTE RESPONSIVO PARA LA TABLA */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 1px solid #444;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 20px 0;
             background-color: #1a1a1a;
             color: #f0f0f0;
+            min-width: 500px; /* Asegura legibilidad */
         }
         th, td {
             border: 1px solid #444;
@@ -74,6 +86,7 @@
             background-color: #e74c3c;
             color: white;
         }
+        
         .footer-link {
             text-align: center;
             margin-top: 50px;
@@ -139,28 +152,30 @@
 
         <div class="section">
             <h2>V. Cronología Geográfica</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Evento / Sitio</th>
-                        <th>Descripción Detallada</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>La Toma</strong></td>
-                        <td>Caserío donde vivió la familia Caraballo.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Campaña Admirable</strong></td>
-                        <td>Paso de Bolívar que detonó la tragedia familiar.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Monumento (1967)</strong></td>
-                        <td>Institucionalización de la leyenda en Apartaderos.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Evento / Sitio</th>
+                            <th>Descripción Detallada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>La Toma</strong></td>
+                            <td>Caserío donde vivió la familia Caraballo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Campaña Admirable</strong></td>
+                            <td>Paso de Bolívar que detonó la tragedia familiar.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Monumento (1967)</strong></td>
+                            <td>Institucionalización de la leyenda en Apartaderos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
 
         <div class="footer-link">
