@@ -3,35 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitos y Leyendas de Venezuela</title>
+    <title>Mitos y Leyendas de Venezuela | UPTPC</title>
+    <style>
+        body {
+            background-color: #131313;
+            color: #f0f0f0;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(0,0,0,0.85);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px #e74c3c22;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        h1 {
+            color: #e74c3c;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-style: italic;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #444;
+            margin: 25px 0;
+        }
+        .team-section {
+            text-align: left;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .menu-section {
+            margin-top: 30px;
+        }
+        .menu-list {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-list li {
+            margin: 15px 0;
+        }
+        .menu-list a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: 1px solid #e74c3c;
+            border-radius: 5px;
+            display: block;
+            transition: 0.3s;
+        }
+        .menu-list a:hover {
+            background-color: #e74c3c;
+            color: white;
+            box-shadow: 0 0 15px #e74c3c;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        strong {
+            color: #e74c3c;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mitos y Leyendas de Venezuela</h1>
-    <p>Proyecto de Programación - UPTPC</p>
-    
-    <hr>
-    
-    <h3>Integrantes del Grupo 2:</h3>
-    <ul>
-        <li><strong>Luis Torrelles</strong> (Administrador del Proyecto)</li>
-        <li><strong>Leiker Muñoz</strong> (Desarrollador de Contenido)</li>
-        <li><strong>Josué Reyes</strong> (Desarrollador de Contenido)</li>
-    </ul>
+    <div class="container">
+        <header>
+            <h1>Mitos y Leyendas</h1>
+            <p class="subtitle">Proyecto de Programación - UPTPC (Puerto Cabello)</p>
+        </header>
+        
+        <hr>
+        
+        <div class="team-section">
+            <h3>Integrantes del Grupo 2:</h3>
+            <ul style="list-style: none; padding: 0;">
+                <li><strong>Luis Torrelles</strong> - Administrador</li>
+                <li><strong>Leiker Muñoz</strong> - Desarrollador</li>
+                <li><strong>Josué Reyes</strong> - Desarrollador</li>
+            </ul>
+        </div>
 
-    <hr>
+        <hr>
 
-    <h3>Menú de Navegación:</h3>
-    <nav>
-        <ul>
-            <li><a href="sayona.html">La Sayona</a></li>
-            <li><a href="silbon.html">El Silbón</a></li>
-            <li><a href="loca-luz.html">La Loca Luz Caraballo</a></li>
-            <li><a href="tabla.html">Tabla Comparativa de Espantos</a></li>
-        </ul>
-    </nav>
+        <div class="menu-section">
+            <h3>Menú de Navegación:</h3>
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="sayona.html">La Sayona</a></li>
+                    <li><a href="silbon.html">El Silbón</a></li>
+                    <li><a href="loca-luz.html">La Loca Luz Caraballo</a></li>
+                    <li><a href="tabla.html">Tabla Comparativa</a></li>
+                </ul>
+            </nav>
+        </div>
 
-    <footer>
-        <p><em>"Un recorrido por el folklore nacional"</em></p>
-    </footer>
+        <footer>
+            <p><em>"Un recorrido por el folklore nacional"</em></p>
+            <p>© 2026 - Informática Unidad 4</p>
+        </footer>
+    </div>
 </body>
 </html>
